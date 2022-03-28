@@ -18,6 +18,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -45,18 +46,9 @@ table {
 
 html,
 body {
-	background-color: transparent;
-	position: fixed;
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
-	& > #app {
-		width: 100vw;
-		height: 100vh;
-		overflow: hidden auto;
-		-webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
-		scroll-behavior: smooth;
-	}
 }
 
 .hidden {
@@ -94,18 +86,185 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
-	body {
+	.cl-b {
 		color: #000;
 	}
+	.cl-b-80 {
+		color: rgba($color: #000000, $alpha: .8);
+	}
+	.cl-b-60 {
+		color: rgba($color: #000000, $alpha: .6);
+	}
+	.cl-b-40 {
+		color: rgba($color: #000000, $alpha: .4);
+	}
+	.cl-b-20 {
+		color: rgba($color: #000000, $alpha: .2);
+	}
+	.cl-w {
+		color: #fff;
+	}
+	.cl-w-80 {
+		color: rgba($color: #fff, $alpha: .8);
+	}
+	.cl-w-60 {
+		color: rgba($color: #fff, $alpha: .6);
+	}
+	.cl-w-40 {
+		color: rgba($color: #fff, $alpha: .4);
+	}
+	.cl-w-20 {
+		color: rgba($color: #fff, $alpha: .2);
+	}
+	.cl-gray-80 {
+		color: #333333;
+	}
+	.cl-gray-60 {
+		color: #666666;
+	}
+	.cl-gray-40 {
+		color: #999999;
+	}
+	.cl-gray-20 {
+		color: #cccccc;
+	}
+	
 	.bg-normal {
 		background-color: #fff;
 	}
+
+	.bg-b {
+		background-color: #000;
+	}
+	.bg-b-80 {
+		background-color: rgba($color: #000000, $alpha: .8);
+	}
+	.bg-b-60 {
+		background-color: rgba($color: #000000, $alpha: .6);
+	}
+	.bg-b-40 {
+		background-color: rgba($color: #000000, $alpha: .4);
+	}
+	.bg-b-20 {
+		background-color: rgba($color: #000000, $alpha: .2);
+	}
+	.bg-w {
+		background-color: #fff;
+	}
+	.bg-w-80 {
+		background-color: rgba($color: #fff, $alpha: .8);
+	}
+	.bg-w-60 {
+		background-color: rgba($color: #fff, $alpha: .6);
+	}
+	.bg-w-40 {
+		background-color: rgba($color: #fff, $alpha: .4);
+	}
+	.bg-w-20 {
+		background-color: rgba($color: #fff, $alpha: .2);
+	}
+	.bg-gray-80 {
+		background-color: #333333;
+	}
+	.bg-gray-60 {
+		background-color: #666666;
+	}
+	.bg-gray-40 {
+		background-color: #999999;
+	}
+	.bg-gray-20 {
+		background-color: #cccccc;
+	}
 }
+
 @media (prefers-color-scheme: dark) {
-	body {
+	.cl-b {
 		color: #fff;
 	}
+	.cl-b-80 {
+		color: rgba($color: #fff, $alpha: .8);
+	}
+	.cl-b-60 {
+		color: rgba($color: #fff, $alpha: .6);
+	}
+	.cl-b-40 {
+		color: rgba($color: #fff, $alpha: .4);
+	}
+	.cl-b-20 {
+		color: rgba($color: #fff, $alpha: .2);
+	}
+	.cl-w {
+		color: #000;
+	}
+	.cl-w-80 {
+		color: rgba($color: #000, $alpha: .8);
+	}
+	.cl-w-60 {
+		color: rgba($color: #000, $alpha: .6);
+	}
+	.cl-w-40 {
+		color: rgba($color: #000, $alpha: .4);
+	}
+	.cl-w-20 {
+		color: rgba($color: #000, $alpha: .2);
+	}
+	.cl-gray-80 {
+		color: #ccc;
+	}
+	.cl-gray-60 {
+		color: #999;
+	}
+	.cl-gray-40 {
+		color: #666;
+	}
+	.cl-gray-20 {
+		color: #333;
+	}
+	
 	.bg-normal {
 		background-color: #242424;
+	}
+
+	.bg-b {
+		background-color: #fff;
+	}
+	.bg-b-80 {
+		background-color: rgba($color: #fff, $alpha: .8);
+	}
+	.bg-b-60 {
+		background-color: rgba($color: #fff, $alpha: .6);
+	}
+	.bg-b-40 {
+		background-color: rgba($color: #fff, $alpha: .4);
+	}
+	.bg-b-20 {
+		background-color: rgba($color: #fff, $alpha: .2);
+	}
+	.bg-w {
+		background-color: #000;
+	}
+	.bg-w-80 {
+		background-color: rgba($color: #000, $alpha: .8);
+	}
+	.bg-w-60 {
+		background-color: rgba($color: #000, $alpha: .6);
+	}
+	.bg-w-40 {
+		background-color: rgba($color: #000, $alpha: .4);
+	}
+	.bg-w-20 {
+		background-color: rgba($color: #000, $alpha: .2);
+	}
+	.bg-gray-80 {
+		background-color: #ccc;
+	}
+	.bg-gray-60 {
+		background-color: #999;
+	}
+	.bg-gray-40 {
+		background-color: #666;
+	}
+	.bg-gray-20 {
+		background-color: #333;
 	}
 }

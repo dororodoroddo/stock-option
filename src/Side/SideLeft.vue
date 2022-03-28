@@ -1,16 +1,24 @@
 <template>
-  <div class="side-left">
-  </div>
+  <aside class="side-left">
+    왼쪽
+    <Side />
+  </aside>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import Side from './Side.vue';
 
-@Component
+@Component({
+  components: {
+    Side,
+  },
+})
 export default class SideLeft extends Vue {
 
 }
 </script>
 
 <style scoped lang="scss">
+
 </style>
