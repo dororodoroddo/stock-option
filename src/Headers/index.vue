@@ -9,7 +9,9 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Headers extends Vue {
-
+  private mounted() {
+    //
+  }
 }
 </script>
 
