@@ -2,7 +2,7 @@
   <div class="app bg-normal cl-b">
     <Headers />
     <div class="app--container">
-      <SideLeft />
+      <!-- <SideLeft /> -->
       <Mains />
       <SideRight />
     </div>

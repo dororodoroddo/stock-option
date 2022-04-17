@@ -1,6 +1,27 @@
 <template>
   <footer class="footer">
-    dororodoroddo
+    <div>
+
+    </div>
+      <ul>
+        <li>
+          이용약관
+        </li>
+        <li>
+          정보수집 여부 안내
+        </li>
+      </ul>
+      <dl>
+        <dt>
+          이메일
+        </dt>
+        <dd>
+          dororodoroddo@gmail.com
+        </dd>
+      </dl>
+      <p>
+        Copyrights © dororodoroddo All Rights Reserved.
+      </p>
   </footer>
 </template>
 

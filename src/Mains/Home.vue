@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    가나다라마바사
   </div>
 </template>
 

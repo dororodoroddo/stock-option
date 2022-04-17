@@ -17,6 +17,6 @@ export default class Mains extends Vue {
 
 <style scoped lang="scss">
 .main {
-  width: calc(100vw - 400px);
+  width: calc(100vw - 200px);
 }
 </style>
