@@ -1,10 +1,9 @@
-import {  } from "vuex";
-import RootState from './stateType';
+import RootState from './types';
 
-function state():RootState {
+function initialstate():RootState {
     return {
         test: 'test',
     };
 }
 
-export default state;
+export default initialstate;

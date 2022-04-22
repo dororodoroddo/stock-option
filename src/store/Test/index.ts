@@ -1,22 +1,25 @@
 import Vue from "vue";
-import Vuex from "vuex";
+import Vuex, { Module } from "vuex";
 import mutations from "./mutations"
 import getters from "./getters"
 import actionConstructor from "./actionConstructor"
 import state from "./state"
-import RootState from "./types";
+import RootState from "@/store/types";
 import AxiosApi from "@/API";
-import testStore from "@/store/Test"
+import TestState from "./types";
+
 const api = AxiosApi.getInstance();
 const actions = actionConstructor(api);
+
 Vue.use(Vuex);
 
-export default new Vuex.Store<RootState>({
+const test: Module<TestState, RootState> = {
+  namespaced: true,
   state,
   mutations,
   actions,
   getters,
-  modules: {
-    test: testStore,
-  },
-});
+  modules: {},
+};
+
+export default test;

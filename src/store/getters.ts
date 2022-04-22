@@ -1,8 +1,17 @@
-import { GetterTree } from 'vuex';
-import RootState from './stateType';
+import { Key } from '@/type';
+import { Getter } from 'vuex';
+import RootState from './types';
 
-const getters: GetterTree<RootState, any> = {
-    doubleCount(state: RootState): string {
+export type GetterTree<State, Getters extends Key> = {
+    [K in Getters]: Getter<State, RootState>
+}
+
+export enum RootGetters {
+    ABC = 'abc',
+}
+
+const getters: GetterTree<RootState, RootGetters> = {
+    [RootGetters.ABC](state): string {
         return state.test;
     },
 };
