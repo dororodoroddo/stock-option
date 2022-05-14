@@ -5,21 +5,20 @@
     </div>
       <ul>
         <li>
-          이용약관
+          <router-link to="/service/terms">
+            이용약관
+          </router-link>
         </li>
         <li>
-          정보수집 여부 안내
+          <router-link to="/service/private-info">
+            정보수집 여부 안내
+          </router-link>
         </li>
       </ul>
-      <dl>
-        <dt>
-          이메일
-        </dt>
-        <dd>
-          dororodoroddo@gmail.com
-        </dd>
-      </dl>
       <p>
+        <a href="mailto:dororodoroddo@gmail.com">
+          dororodoroddo@gmail.com
+        </a><br />
         Copyrights © dororodoroddo All Rights Reserved.
       </p>
   </footer>

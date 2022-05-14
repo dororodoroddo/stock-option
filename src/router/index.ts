@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Home from "@/Mains/Home.vue";
+import P404 from "@/Mains/P404.vue";
 
 Vue.use(VueRouter);
 
@@ -19,6 +20,11 @@ const routes: Array<RouteConfig> = [
   //   component: () =>
   //     import(/* webpackChunkName: "about" */ "../views/About.vue"),
   // },
+  {
+    path: "*",
+    name: "404",
+    component: P404,
+  }
 ];
 
 const router = new VueRouter({

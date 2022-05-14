@@ -1,6 +1,6 @@
 import RootState from './types';
 
-function initialstate():RootState {
+function initialstate(): RootState {
     return {
         test: 'test',
     };
